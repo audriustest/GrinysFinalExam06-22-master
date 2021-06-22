@@ -25,9 +25,9 @@ public abstract class BaseTest {
         driver.get("https://demo.opencart.com");
     }
 
-//    @AfterClass
-//    public static void closeBrowser() {
-//        driver.manage().deleteAllCookies();
-//        driver.close();
-//    }
+    @AfterClass
+    public static void closeBrowser() {
+        driver.manage().deleteAllCookies();
+        driver.close();
+    }
 }

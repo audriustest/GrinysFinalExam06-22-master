@@ -24,9 +24,6 @@ public class MainPage extends AbstractObjectPage {
 	@FindBy(linkText = "Phones & PDAs")
 	private WebElement buttonPhonesPDAs;
 
-	@FindBy(xpath = "//div[@class='button-group']/button[1]")
-	private List<WebElement> buttonsAddToCart;
-
 	
 	// constructor
 	public MainPage(WebDriver driver) {

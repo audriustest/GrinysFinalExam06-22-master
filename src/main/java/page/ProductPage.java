@@ -7,9 +7,11 @@ import utils.WaitUtils;
 
 public class ProductPage extends AbstractObjectPage {
 
-
      public ProductPage(WebDriver driver) {
         super(driver);
     }
 
 }
+
+
+
