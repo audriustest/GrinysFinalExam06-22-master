@@ -1,8 +1,8 @@
 package exam;
 
 
+import java.util.List;
 import java.util.logging.Logger;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -13,7 +13,6 @@ import page.LaptopsNotebooksPage;
 
 
 public class TestUI extends BaseTest {
-
     private MainPage mainPage = new MainPage(driver);
     private LaptopsNotebooksPage laptopsNotebooksPage = new LaptopsNotebooksPage(driver);
     private ProductPage productPage = new ProductPage(driver);
@@ -34,6 +33,10 @@ public class TestUI extends BaseTest {
         mainPage.clickButtonLaptopsNotebooks();
         mainPage.clickButtonShowAllLaptopsNotebooks();
         mainPage.openItem("MacBook");
+//        WebElement element1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/ul[1]/li[4]"));
+//        String strng1 = element.getText();
+//        Assert.assertEquals("Availability: In Stock", strng1);
+        mainPage.clickButtonLaptopsNotebooks();
         mainPage.clickButtonLaptopsNotebooks();
         mainPage.clickButtonShowAllLaptopsNotebooks();
         mainPage.openItem("MacBook Air");
@@ -51,7 +54,6 @@ public class TestUI extends BaseTest {
         mainPage.openItem("iPhone");
         mainPage.clickButtonPhonesPDAs();
         mainPage.openItem("Palm Treo Pro");
-
     }
 
     private void assertEquals(String availability, String strng) {

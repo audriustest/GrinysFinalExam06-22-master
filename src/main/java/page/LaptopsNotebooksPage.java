@@ -11,7 +11,6 @@ import utils.WaitUtils;
 
 public class LaptopsNotebooksPage extends AbstractObjectPage {
 
-
 	public LaptopsNotebooksPage(WebDriver driver) {
 		super(driver);
 	}	

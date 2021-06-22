@@ -11,7 +11,7 @@ import utils.WaitUtils;
 
 public class MainPage extends AbstractObjectPage {
 
-	// buttons
+	// get buttons
 	@FindBy(linkText = "Laptops & Notebooks")
 	private WebElement buttonLaptopsNotebooks;
 
@@ -25,7 +25,7 @@ public class MainPage extends AbstractObjectPage {
 	private WebElement buttonPhonesPDAs;
 
 	
-	// constructor
+	// create constructor
 	public MainPage(WebDriver driver) {
 		super(driver);
 	}

@@ -15,7 +15,6 @@ public abstract class AbstractObjectPage {
 		PageFactory.initElements(driver, this); 
 	}
 
-
 	public void openItem(String productName){
 		driver.findElement(By.xpath("//div[contains(@class, 'product-layout') and .//a[text()='"+ productName +"']]//a")).click();
 		WaitUtils.waitForJS(driver);
